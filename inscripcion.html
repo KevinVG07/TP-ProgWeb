@@ -10,39 +10,49 @@
     </style>
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="contenedor">
-            <div class="logo">
-                <a href="index.html"><img src="img/logo.jpg" class="logo"></a>
-            </div>
-        <div class="buscar">
-            <label>Encuentre el curso que necesita<input list="buscador" name="buscador" placeholder="Buscar..."></label>
-            <datalist id="buscador">
-                <option value="Community Manager"></option>
-                <option value="Comercio Exterior"></option>
-                <option value="Fotografia Digital"></option>
-                <option value="Moda y Diseño"></option>
-                <option value="Seguridad Informatica"></option>
-                <option value="Administrador de Redes"></option>
-            </datalist>
+            <!--<div class="contenedor_header">-->
+                <div class="logo">
+                   <a href="index.html"><img src="img/logo.jpg" alt="logo"></a>
+                </div>
+
+                <div class="buscar">
+                <label class="buscador"><!--Encuentre el curso que necesita--><input list="buscador" name="buscador" placeholder="Busca tu curso.."></label>
+                <datalist id="buscador">
+                    <option value="Community Manager"></option>
+                    <option value="Comercio Exterior"></option>
+                    <option value="Fotografia Digital"></option>
+                    <option value="Moda y Diseño"></option>
+                    <option value="Seguridad Informatica"></option>
+                    <option value="Administrador de Redes"></option>
+                </datalist>
+                </div>
+
+                <div class="carrito">
+                    <div class="contenedor_p_carrito">
+                        <p>0</p>
+                    </div>
+                    <img src="img/carrito.png">   
+                </div>
+            <!--</div>-->
         </div>
-        <div class="carrito">
-            <p>0</p>
-        </div>
-        </div>
+
         <div class="clear"></div>
-    </header>
-    <main>
-      <h2>Inscripcion</h2>
-       <nav>
+   
+           <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="calendario.html">Calendario</a></li>
-                <li><a href="giftcard.html">GiftCard!</a></li>
+                <li><a href="giftcard.html">GiftCard</a></li>
                 <li><a href="inscripcion.html">Inscripcion</a></li>
                 <li><a href="contacto.html">Contactanos</a></li>
             </ul>
-        </nav>
+        </nav> 
+    </header>
+    <main>
+      <h2>Inscripcion</h2>
+      
         <article>
            <h3>Complete sus datos y eliga los cursos que desea inscribirse</h3>
             <section>
@@ -105,8 +115,27 @@
         </article>
    </main>
    <footer>
-       
-   </footer>
+        <div class="integrantes">
+            <p>Micaela Neiff</p>
+            <p>Solange Lascano</p>
+            <p>Kevin Villa Gonzáles</p>
+        </div>
+        <div class="menuInferior">
+             <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="calendario.html">Calendario</a></li>
+                <li><a href="giftcard.html">GiftCard!</a></li>
+                <li><a href="inscripcion.html">Inscripcion</a></li>
+                <li><a href="contacto.html">Contactanos</a></li>
+            </ul>
+        </div>
+        <div class="redes">
+            <a href="https://www.facebook.com/"  target="_blank"class="redes__link"><span class="icon-facebook"></span></a>
+            <a href="https://www.youtube.com/" target="_blank" class="redes__link"><span class="icon-youtube"></span></a>
+            <a href="https://twitter.com/" target="_blank" class="redes__link"><span class="icon-twitter"></span></a>
+            <a href="https://www.instagram.com/" target="_blank" class="redes__link"><span class="icon-instagram"></span></a>
+        </div>
+    </footer>
     
 </body>
 </html>
