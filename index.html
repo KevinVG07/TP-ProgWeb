@@ -10,15 +10,15 @@
     </style>
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="contenedor">
-
+            <!--<div class="contenedor_header">-->
                 <div class="logo">
-                    <a href="index.html"><img src="img/logo.jpg" alt="logo"></a>
+                   <a href="index.html"><img src="img/logo.jpg" alt="logo"></a>
                 </div>
 
-            <div class="buscar">
-                <label>Encuentre el curso que necesita<input list="buscador" name="buscador" placeholder="Buscar..."></label>
+                <div class="buscar">
+                <label class="buscador"><!--Encuentre el curso que necesita--><input list="buscador" name="buscador" placeholder="Busca tu curso.."></label>
                 <datalist id="buscador">
                     <option value="Community Manager"></option>
                     <option value="Comercio Exterior"></option>
@@ -27,13 +27,15 @@
                     <option value="Seguridad Informatica"></option>
                     <option value="Administrador de Redes"></option>
                 </datalist>
-            </div>
+                </div>
 
-            <div class="carrito">
-                <img src="img/carrito.png">
-                <p>0</p>
-            </div>
-
+                <div class="carrito">
+                    <div class="contenedor_p_carrito">
+                        <p>0</p>
+                    </div>
+                    <img src="img/carrito.png">   
+                </div>
+            <!--</div>-->
         </div>
 
         <div class="clear"></div>
@@ -42,7 +44,7 @@
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="calendario.html">Calendario</a></li>
-                <li><a href="giftcard.html">GiftCard!</a></li>
+                <li><a href="giftcard.html">GiftCard</a></li>
                 <li><a href="inscripcion.html">Inscripcion</a></li>
                 <li><a href="contacto.html">Contactanos</a></li>
             </ul>
@@ -61,15 +63,15 @@
     
         <section class="pasos">   
 
-            <article>
+            <article class="pasos_lista">
                 <h3>Primer Paso</h3>
                 <p>Seleccione en el menu la seccion de "INSCRIPCION".</p>
             </article>
-            <article>
+            <article class="pasos_lista">
                 <h3>Segundo paso</h3>
                 <p>Complete sus datos y verifique el/los curso/s al que esta por inscribirse.</p>
             </article>
-            <article>
+            <article class="pasos_lista">
                 <h3>Tercer paso</h3>
                 <p> Seleccione "PAGAR" para poder confirmar la operacion y reservar su lugar en el curso.</p>
             </article>
@@ -79,39 +81,76 @@
             <h2>Cursos destacados</h2> </div>
 
         <section class="lista">
-            <article>
-                    <img src="img/cocina-mexicana.jpg" alt="">
+                <article class="article_lista">
+                    <div class="div_img_list">
+                        <img src="img/cocina-mexicana.jpg" alt="" class="img_list_ajuste">
+                    </div>
+                    <div class="div_contenido_lista">
                     <h3>Curso de Cocina Mexicana</h3>
                     <p>descripcion breve</p>
-                    <a href="cocina-mexicana.html"><input type="button" value="+INFO"></a>
-            </article>
-                <article>
-                    <img src="img/lettering.jpg" alt="">
+                    <a href="cocina-mexicana.html"><input type="button" value="+ INFO"></a>
+                    </div>
+                </article>
+                <article class="article_lista">
+                    <div class="div_img_list">
+                        <img src="img/lettering.jpg" alt=""class="img_list_ajuste">
+                    </div>
+                    <div class="div_contenido_lista">
                     <h3>Curso de Lettering</h3>
                     <p>descripcion breve</p>
-                    <a href="lettering.html"><input type="button" value="+INFO"></a>
+                    <a href="lettering.html"><input type="button" value="+ INFO"></a>
+                    </div>
                 </article>
-                <article>
-                    <img src="img/travel-hacking.jpg" alt="">
+                <article class="article_lista">
+                    <div class="div_img_list">
+                        <img src="img/travel-hacking.jpg" alt="" class="img_list_ajuste">
+                    </div>
+                    <div class="div_contenido_lista">
                     <h3>Curso de Travel Hacking</h3>
                     <p>descripcion breve</p>
-                    <a href="travel-hacking.html"><input type="button" value="+INFO"></a>
+                    <a href="travel-hacking.html"><input type="button" value="+ INFO"></a>
+                    </div>
                 </article>
-                <article>
-                    <img src="img/fotografia.jpg" alt="">
+        </section>    
+        <section class="lista">
+                <article class="article_lista">
+                    <div class="div_img_list">
+                        <img src="img/fotografia.jpg" alt="" class="img_list_ajuste">
+                    </div>
+                    <div class="div_contenido_lista">
                     <h3>Curso de Fotografia</h3>
                     <p>descripcion breve</p>
-                    <a href="fotografia.html"><input type="button" value="+INFO"></a>
+                    <a href="fotografia.html"><input type="button" value="+ INFO"></a>
+                    </div>
                 </article>
-        
+                 <article class="article_lista">
+                    <div class="div_img_list">
+                        <img src="img/fotografia.jpg" alt="" class="img_list_ajuste">
+                    </div>
+                    <div class="div_contenido_lista">
+                    <h3>Curso de Fotografia</h3>
+                    <p>descripcion breve</p>
+                    <a href="fotografia.html"><input type="button" value="+ INFO"></a>
+                    </div>
+                </article>
+                 <article class="article_lista">
+                    <div class="div_img_list">
+                        <img src="img/fotografia.jpg" alt="" class="img_list_ajuste">
+                    </div>
+                    <div class="div_contenido_lista">
+                    <h3>Curso de Fotografia</h3>
+                    <p>descripcion breve</p>
+                    <a href="fotografia.html"><input type="button" value="+ INFO"></a>
+                    </div>
+                </article>      
         </section>
     </main>
     
     <footer>
         <div class="integrantes">
-            <p>Micaela 1111111</p>
-            <p>Solange 1111111</p>
-            <p>Kevin 11111111</p>
+            <p>Micaela Neiff</p>
+            <p>Solange Lascano</p>
+            <p>Kevin Villa Gonzáles</p>
         </div>
         <div class="menuInferior">
              <ul>
@@ -123,10 +162,10 @@
             </ul>
         </div>
         <div class="redes">
-            <a href="" class="redes__link"><span class="icon-facebook"></span></a>
-            <a href="" class="redes__link"><span class="icon-youtube"></span></a>
-            <a href="" class="redes__link"><span class="icon-twitter"></span></a>
-            <a href="" class="redes__link"><span class="icon-instagram"></span></a>
+            <a href="https://www.facebook.com/"  target="_blank"class="redes__link"><span class="icon-facebook"></span></a>
+            <a href="https://www.youtube.com/" target="_blank" class="redes__link"><span class="icon-youtube"></span></a>
+            <a href="https://twitter.com/" target="_blank" class="redes__link"><span class="icon-twitter"></span></a>
+            <a href="https://www.instagram.com/" target="_blank" class="redes__link"><span class="icon-instagram"></span></a>
         </div>
     </footer>
 </body>
