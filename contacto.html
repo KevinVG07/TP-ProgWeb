@@ -49,30 +49,36 @@
         </nav> 
     </header>
     <main>
-        <section>
-            <article>
-               <h3>Envianos tu consulta. Te responderemos a la brevedad</h3>
-                <form action="#" method="get" enctype="application/x-www-form-urlencoded">
-                    <label for="nombre">Nombre y Apellido</label>
-                    <input type="text" id="nombre" name="nombre" required>
-                    <label for="email">Correo Electronico</label>
-                    <input type="email" id="email" name="email" required>
-                    <label for="telefono">Telefono</label>
-                    <input type="tel" id="telefono" name="telefono">
-                    <label for="consulta">Consulta</label>
-                    <textarea name="consulta" id="consulta" cols="20" rows="7" required></textarea>
-                    <button>Enviar Consulta</button>
-                </form>
+        <section class="section_contenido">
+            <article class="article_form_conntacto">
+               <div class="div_form_contacto">
+                    <div class="div_encabezado_form_contacto">
+                     <h3>Envianos tu consulta. Te responderemos a la brevedad</h3>
+                    </div>
+                    <form action="#" method="get" enctype="application/x-www-form-urlencoded">
+                        <label for="nombre">Nombre y Apellido</label>
+                         <input type="text" id="nombre" name="nombre" required>
+                        <label for="email">Correo Electronico</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="telefono">Telefono</label>
+                        <input type="tel" id="telefono" name="telefono">
+                        <label for="consulta">Consulta</label>
+                        <textarea name="consulta" id="consulta" cols="20" rows="7" required></textarea>
+                        <button>Enviar Consulta</button>
+                    </form>
+                </div>
             </article>
-            <article>
+            <article class="contenedor_datos_mapa">
+                 <div class="article_datos_contacto">
                 <h3>Contacto</h3>
                 <p>Calle falsa 123, San Justo - La Matanza.</p>
                 <p>Telefono: 4555-1234</p>
                 <p>Horario de atencion al publico: 9:00hs - 17:00hs / Lunes a Sabado</p>
                 <p>Email: <a href="mailto:contacto@cursodigital.com">contacto@cursodigital.com</a></p>
-            </article>
-            <article>
+                </div>
+                <div class="article_mapa_contacto">
                 <img src="img/map.jpg" alt="mapa">
+                </div>
             </article>
         </section>
     </main>
