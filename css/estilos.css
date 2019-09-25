@@ -16,9 +16,14 @@ body{
 	background-color: #183661;
 }
 .contenedor{
-	display: flex;
-	flex-direction: row;
+    display: flex;
+    justify-content: space-around;
 }
+.header_menu{
+    background-size: 10%; 
+	margin-top: 1.4em;
+}
+
 /*.contenedor_header{
 	justify-content: space-between;
 }*/
@@ -28,7 +33,6 @@ body{
 	height: 5em;
 	margin: 0.5em 2.5em;
 	padding: 1em 1.5em;
-
 }
 
 .logo a img{
@@ -57,7 +61,6 @@ body{
 .carrito img{
 	height: 3em;
 	width: 3em;
-	
 }
 
 .contenedor_p_carrito {
@@ -78,10 +81,6 @@ body{
 	text-align:center;
 }
 
-nav{
-	background-size: 10%; 
-	margin-top: 1.4em;
-}
 ul{
 	text-align: center;
 }
@@ -113,18 +112,22 @@ nav a:hover{
 
 .pasos{
 	display: flex;
+    text-align: center;
 	justify-content: space-between;
 }
 .pasos_lista{
-	height: 5em;
-	border: 2px solid #DD6B4D;
-	text-align: center;
-	margin: 2em 2em;
+	border: 3px solid #DD6B4D;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 2em 2em;
 	padding: 2em 3em;
+	
 }
 .pasos_lista  h3{
+    font-size: 1.3em;
+    padding-top: 10px;
+    padding-bottom: 20px;
 	text-transform: uppercase;
-	margin-bottom: 1em;
 }
 .linea {
 	margin-top: 2em;
@@ -136,16 +139,18 @@ nav a:hover{
 }
 
 .linea h2{
-	text-align: center
+    width: 100%;
+	text-align: center;
 }
 .lista{
 	display: flex;
 	justify-content: space-between;
-	height: 30em;
+    text-align: center;
+	height: auto;
 }
 .article_lista{
-	height: 25em;
-	width: 17em;
+	height: auto;
+	width: auto;
 	margin: 1em 5em ;
 	cursor: pointer;
 	border: 0.5px solid #DD6B4D;
@@ -156,8 +161,8 @@ nav a:hover{
 	 box-shadow: 0 5em 15em rgba(221,107,0.5);
 }
 .div_img_list{
-	width: 17em;
-	height: 15em;
+	width: auto;
+	height: auto;
 	top: 0em;
 
 }
@@ -169,31 +174,28 @@ nav a:hover{
 .div_contenido_lista h3{
 	color: #183661;
 	text-transform: uppercase;
-	text-align: center;
 	margin: 0.5em 0em;
 	padding: 0.5em 0em;
 }
 .div_contenido_lista p{
 	color: #183661;
-	text-align: center;
 	margin: 0.5em 0em;
 	padding: 0.5em 0em; 
 }
 .div_contenido_lista a input{
-	font-size:1em;
-    font-weight:bold;
+	font-size: 1em;
+    font-weight: bold;
    /* height: 1.5em;*/
    padding: 0.5em;
-    width: 5em;
+    width: auto;
     color:#DAE1E7;
     background:#DD6B4D;
-    margin-left: 11em;
+    
 }
 
 .tarjetas{
 	display: flex;
-	
-
+    justify-content: center;
 }
 
 /*contacto.html*/
@@ -220,8 +222,11 @@ nav a:hover{
 	text-align: center;
 	width: 16em;
 	height:1.5em;
-	margin: 2em 1em 1em 1em;
+	margin: 1em;
 	padding: 1em;
+    background: #dd6b4d;
+    border: 1px solid;
+    
 }
 .div_form_contacto form{
 	display: flex;
@@ -267,12 +272,14 @@ textarea{
 .contenedor_datos_mapa{
 	display: flex;
 	flex-direction: column;
+    padding-top: 1em;
 	width: 20em;
 	height: 40em;
 }
 .article_datos_contacto{
-	width: 20em;
-	height: 20em;
+    margin-bottom: 3em;
+    background: #dd6b4d;
+    border: 1px solid;
 }
 .article_mapa_contacto{
 	width: 20em;
