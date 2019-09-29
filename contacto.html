@@ -10,15 +10,13 @@
     </style>
 </head>
 <body>
-  <header class="header">
-        <div class="contenedor">
-            <!--<div class="contenedor_header">-->
-                <div class="logo">
-                   <a href="index.html"><img src="img/logo.jpg" alt="logo"></a>
-                </div>
-
-                <div class="buscar">
-                <label class="buscador"><!--Encuentre el curso que necesita--><input list="buscador" name="buscador" placeholder="Busca tu curso.."></label>
+    <header class="header">
+        <div class="header_contenedor">
+            <div class="header_contenedor_logo">
+                <a href="index.html"><img src="img/logo.jpg" alt="logo"></a>
+            </div>
+            <div class="header_contenedor_buscar">
+                <label><input list="buscador" name="buscador" placeholder="Busca tu curso.."></label>
                 <datalist id="buscador">
                     <option value="Community Manager"></option>
                     <option value="Comercio Exterior"></option>
@@ -27,17 +25,15 @@
                     <option value="Seguridad Informatica"></option>
                     <option value="Administrador de Redes"></option>
                 </datalist>
-                </div>
-
-                <div class="carrito">
-                    <div class="contenedor_p_carrito">
+            </div>
+            <div class="header_contenedor_carrito">
+                    <div class="header_contenedor_carrito_contador">
                         <p>0</p>
                     </div>
                     <img src="img/carrito.png">   
-                </div>
-            <!--</div>-->
+            </div>
         </div>
-        <nav>
+        <nav class="header_menu">
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="calendario.html">Calendario</a></li>
@@ -47,13 +43,10 @@
             </ul>
         </nav> 
     </header>
-    <main>
-        <section class="section_contenido">
-            <article class="article_form_conntacto">
-               <div class="div_form_contacto">
-                    <div class="div_encabezado_form_contacto">
-                     <h3>Envianos tu consulta. Te responderemos a la brevedad</h3>
-                    </div>
+    <main class="main">
+        <section class="main_contenido">
+            <article class="main_contenido_consulta">
+                    <h3>Envianos tu consulta. Te responderemos a la brevedad</h3>
                     <form action="#" method="get" enctype="application/x-www-form-urlencoded">
                         <label for="nombre">Nombre y Apellido</label>
                         <input type="text" id="nombre" name="nombre" required>
@@ -65,29 +58,28 @@
                         <textarea name="consulta" id="consulta" cols="20" rows="7" required></textarea>
                         <button>Enviar Consulta</button>
                     </form>
-                </div>
             </article>
-            <article class="contenedor_datos_mapa">
-                 <div class="article_datos_contacto">
+            <article class="main_contenido_info">
+                <div class="main_contenido_contacto">
                 <h3>Contacto</h3>
                 <p>Calle falsa 123, San Justo - La Matanza.</p>
                 <p>Telefono: 4555-1234</p>
                 <p>Horario de atencion al publico: 9:00hs - 17:00hs / Lunes a Sabado</p>
                 <p>Email: <a href="mailto:contacto@cursodigital.com">contacto@cursodigital.com</a></p>
                 </div>
-                <div class="article_mapa_contacto">
+                <div class="main_contenido_mapa">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13119.124017003014!2d-58.41501360468745!3d-34.58877547230426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca83d2aa1521%3A0xc7a941fe0d021ba0!2sAlto%20Palermo%20Shopping!5e0!3m2!1ses-419!2sar!4v1569347040898!5m2!1ses-419!2sar></iframe>"></iframe>
                 </div>
             </article>
         </section>
     </main>
-    <footer>
-        <div class="integrantes">
+    <footer class="footer">
+        <div class="footer_integrantes">
             <p>Micaela Neiff</p>
             <p>Solange Lascano</p>
             <p>Kevin Villa Gonzáles</p>
         </div>
-        <div class="menuInferior">
+        <div class="footer_menuInferior">
              <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="calendario.html">Calendario</a></li>
@@ -96,11 +88,11 @@
                 <li><a href="contacto.html">Contactanos</a></li>
             </ul>
         </div>
-        <div class="redes">
-            <a href="https://www.facebook.com/"  target="_blank" class="redes__link"><span class="icon-facebook"></span></a>
-            <a href="https://www.youtube.com/" target="_blank" class="redes__link"><span class="icon-youtube"></span></a>
-            <a href="https://twitter.com/" target="_blank" class="redes__link"><span class="icon-twitter"></span></a>
-            <a href="https://www.instagram.com/" target="_blank" class="redes__link"><span class="icon-instagram"></span></a>
+        <div class="footer_redes">
+            <a href="https://www.facebook.com/"  target="_blank" class="footer_redes__link"><span class="icon-facebook"></span></a>
+            <a href="https://www.youtube.com/" target="_blank" class="footer_redes__link"><span class="icon-youtube"></span></a>
+            <a href="https://twitter.com/" target="_blank" class="footer_redes__link"><span class="icon-twitter"></span></a>
+            <a href="https://www.instagram.com/" target="_blank" class="footer_redes__link"><span class="icon-instagram"></span></a>
         </div>
     </footer>
 </body>

@@ -11,34 +11,29 @@
 </head>
 <body>
     <header class="header">
-        <div class="contenedor">
-            <!--<div class="contenedor_header">-->
-                <div class="logo">
-                   <a href="index.html"><img src="img/logo.jpg" alt="logo"></a>
-                </div>
-
-                <div class="buscar">
-                <label class="buscador"><!--Encuentre el curso que necesita--><input list="buscador" name="buscador" placeholder="Busca tu curso.."></label>
+        <div class="header_contenedor">
+            <div class="header_contenedor_logo">
+                <a href="index.html"><img src="img/logo.jpg" alt="logo"></a>
+            </div>
+            <div class="header_contenedor_buscar">
+                <label><input list="buscador" name="buscador" placeholder="Busca tu curso.."></label>
                 <datalist id="buscador">
-                    <option value="Community Manager"></option>
-                    <option value="Comercio Exterior"></option>
-                    <option value="Fotografia Digital"></option>
-                    <option value="Moda y Diseño"></option>
-                    <option value="Seguridad Informatica"></option>
-                    <option value="Administrador de Redes"></option>
+                    <option value="Travel Hacking"></option>
+                    <option value="Lettering"></option>
+                    <option value="Fotografia"></option>
+                    <option value="Paper Craft"></option>
+                    <option value="Cocina Mexicana"></option>
+                    <option value="Cocina Italiana"></option>
                 </datalist>
-                </div>
-
-                <div class="carrito">
-                    <div class="contenedor_p_carrito">
+            </div>
+            <div class="header_contenedor_carrito">
+                    <div class="header_contenedor_carrito_contador">
                         <p>0</p>
                     </div>
                     <img src="img/carrito.png">   
-                </div>
-            <!--</div>-->
+            </div>
         </div>
-   
-           <nav class="header_menu">
+        <nav class="header_menu">
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="calendario.html">Calendario</a></li>
@@ -48,110 +43,106 @@
             </ul>
         </nav> 
     </header>
-
-    <main>
- 
-        <div class="slider">
+    <main class="main">
+        <div class="main_slider">
             <img src="img/fotografia.jpg" alt="">
             <img src="img/lettering.jpg" alt="">  
         </div>
- 
-        <div class="linea">
-            <h2>Siga los siguientes pasos para inscribirse al curso que desee</h2></div>
-    
-        <section class="pasos">   
-
-            <article class="pasos_lista">
+        <div class="main_subrrayado_tituloH2">
+            <h2>Siga los siguientes pasos para inscribirse al curso que desee</h2>
+        </div>
+        <section class="main_pasos">   
+            <article class="main_pasos_texto">
                 <h3>Primer Paso</h3>
                 <p>Seleccione en el menu la seccion de "INSCRIPCION".</p>
             </article>
-            <article class="pasos_lista">
+            <article class="main_pasos_texto">
                 <h3>Segundo paso</h3>
                 <p>Complete sus datos y verifique el/los curso/s al que esta por inscribirse.</p>
             </article>
-            <article class="pasos_lista">
+            <article class="main_pasos_texto">
                 <h3>Tercer paso</h3>
                 <p> Seleccione "PAGAR" para poder confirmar la operacion y reservar su lugar en el curso.</p>
             </article>
         </section>
-
-        <div class="linea">
-            <h2>Cursos destacados</h2> </div>
-
-        <section class="lista">
-                <article class="article_lista">
-                    <div class="div_img_list">
-                        <img src="img/cocina-mexicana.jpg" alt="" class="img_list_ajuste">
-                    </div>
-                    <div class="div_contenido_lista">
-                    <h3>Curso de Cocina Mexicana</h3>
-                    <p>Duracion:40hs</p>
-                    <p>$3000.-</p>
-                    <a href="cocina-mexicana.html"><input type="button" value="+ INFO"></a>
-                    </div>
-                </article>
-                <article class="article_lista">
-                    <div class="div_img_list">
-                        <img src="img/lettering.jpg" alt="" class="img_list_ajuste">
-                    </div>
-                    <div class="div_contenido_lista">
+        <div class="main_subrrayado_tituloH2">
+            <h2>Cursos destacados</h2>
+        </div>
+        <section class="main_lista">
+            <article class="main_lista_curso">
+                <div class="main_lista_curso_img">
+                    <img src="img/lettering.jpg" alt="" class="main_lista_curso_img_ajuste">
+                </div>
+                <div class="main_lista_curso_texto">
                     <h3>Curso de Lettering</h3>
                     <p>Duracion:80hs</p>
                     <p>$4830.-</p>
                     <a href="lettering.html"><input type="button" value="+ INFO"></a>
-                    </div>
-                </article>
-                <article class="article_lista">
-                    <div class="div_img_list">
-                        <img src="img/travel-hacking.jpg" alt="" class="img_list_ajuste">
-                    </div>
-                    <div class="div_contenido_lista">
+                </div>
+            </article>
+            <article class="main_lista_curso">
+                <div class="main_lista_curso_img">
+                    <img src="img/travel-hacking.jpg" alt="" class="main_lista_curso_img_ajuste">
+                </div>
+                <div class="main_lista_curso_texto">
                     <h3>Curso de Travel Hacking</h3>
                     <p>Duración: 60hs</p>
                     <p>$2688.-</p>
                     <a href="travel-hacking.html"><input type="button" value="+ INFO"></a>
-                    </div>
-                </article>
+                </div>
+            </article>
+            <article class="main_lista_curso">
+                <div class="main_lista_curso_img">
+                    <img src="img/paper-craft.jpg" alt="" class="main_lista_curso_img_ajuste">
+                </div>
+                <div class="main_lista_curso_texto">
+                    <h3>Curso de Paper Craft</h3>
+                    <p>Duracion:80hs</p>
+                    <p>$4830.-</p>
+                    <a href="paper-craft.html"><input type="button" value="+ INFO"></a>
+                </div>
+            </article>
         </section>    
-        <section class="lista">
-                <article class="article_lista">
-                    <div class="div_img_list">
-                        <img src="img/fotografia.jpg" alt="" class="img_list_ajuste">
-                    </div>
-                    <div class="div_contenido_lista">
+        <section class="main_lista">
+            <article class="main_lista_curso">
+                <div class="main_lista_curso_img">
+                    <img src="img/fotografia.jpg" alt="" class="main_lista_curso_img_ajuste">
+                </div>
+                    <div class="main_lista_curso_texto">
                     <h3>Curso de Fotografia</h3>
                     <p>Duracion:80hs</p>
                     <p>$4830.-</p>
                     <a href="fotografia.html"><input type="button" value="+ INFO"></a>
-                    </div>
-                </article>
-                 <article class="article_lista">
-                    <div class="div_img_list">
-                        <img src="img/fotografia.jpg" alt="" class="img_list_ajuste">
-                    </div>
-                    <div class="div_contenido_lista">
-                    <h3>Curso de Fotografia</h3>
+                </div>
+            </article>
+            <article class="main_lista_curso">
+                <div class="main_lista_curso_img">
+                    <img src="img/cocina-italiana.jpg" alt="" class="main_lista_curso_img_ajuste">
+                </div>
+                <div class="main_lista_curso_texto">
+                    <h3>Curso de Cocina Italiana</h3>
                     <p>Duracion:80hs</p>
                     <p>$4830.-</p>
-                    <a href="fotografia.html"><input type="button" value="+ INFO"></a>
-                    </div>
-                </article>
-                 <article class="article_lista">
-                    <div class="div_img_list">
-                        <img src="img/fotografia.jpg" alt="" class="img_list_ajuste">
-                    </div>
-                    <div class="div_contenido_lista">
-                    <h3>Curso de Fotografia</h3>
-                    <p>Duracion:80hs</p>
-                    <p>$4830.-</p>
-                    <a href="fotografia.html"><input type="button" value="+ INFO"></a>
-                    </div>
-                </article>      
+                    <a href="cocina-italiana.html"><input type="button" value="+ INFO"></a>
+                </div>
+            </article>
+            <article class="main_lista_curso">
+                <div class="main_lista_curso_img">
+                    <img src="img/cocina-mexicana.jpg" alt="" class="main_lista_curso_img_ajuste">
+                </div>
+                <div class="main_lista_curso_texto">
+                    <h3>Curso de Cocina Mexicana</h3>
+                    <p>Duracion:40hs</p>
+                    <p>$3000.-</p>
+                    <a href="cocina-mexicana.html"><input type="button" value="+ INFO"></a>
+                </div>
+            </article>   
         </section> 
-            <div class="linea">
-            <h2>Medios de pago</h2> </div>
-        <section>
-            <article class="tarjetas">
+        <div class="main_subrrayado_tituloH2">
+            <h2>Medios de pago</h2>
+        </div>
+        <section class="main_tarjetas">
+            <article>
                 <img src="img/visa.jpg">
                 <img src="img/cabal.jpg">
                 <img src="img/nativa.jpg">
@@ -161,14 +152,13 @@
             </article>
         </section>
     </main>
-    
-    <footer>
-        <div class="integrantes">
+    <footer class="footer">
+        <div class="footer_integrantes">
             <p>Micaela Neiff</p>
             <p>Solange Lascano</p>
             <p>Kevin Villa Gonzáles</p>
         </div>
-        <div class="menuInferior">
+        <div class="footer_menuInferior">
              <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="calendario.html">Calendario</a></li>
@@ -177,11 +167,11 @@
                 <li><a href="contacto.html">Contactanos</a></li>
             </ul>
         </div>
-        <div class="redes">
-            <a href="https://www.facebook.com/"  target="_blank"class="redes__link"><span class="icon-facebook"></span></a>
-            <a href="https://www.youtube.com/" target="_blank" class="redes__link"><span class="icon-youtube"></span></a>
-            <a href="https://twitter.com/" target="_blank" class="redes__link"><span class="icon-twitter"></span></a>
-            <a href="https://www.instagram.com/" target="_blank" class="redes__link"><span class="icon-instagram"></span></a>
+        <div class="footer_redes">
+            <a href="https://www.facebook.com/"  target="_blank" class="footer_redes__link"><span class="icon-facebook"></span></a>
+            <a href="https://www.youtube.com/" target="_blank" class="footer_redes__link"><span class="icon-youtube"></span></a>
+            <a href="https://twitter.com/" target="_blank" class="footer_redes__link"><span class="icon-twitter"></span></a>
+            <a href="https://www.instagram.com/" target="_blank" class="footer_redes__link"><span class="icon-instagram"></span></a>
         </div>
     </footer>
 </body>
