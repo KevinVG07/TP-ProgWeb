@@ -57,13 +57,11 @@ body{
 
 .header_contenedor_carrito_contador{
 	position: relative;
-	height: 1em;
-	width: 1em;
+	width: 1.5em;
 	border-radius: 50% 50% 50% 50%;
 	background-color: #DAE1E7;
 	bottom: -1.3em;
-	left: 2em;
-	padding-bottom: 0.3em;
+	left: 3em;
     color:#183661;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -135,9 +133,7 @@ body{
 }
 
 /*------------------------------------------------------INDEX.HTML MAIN---------------------------------------*/
-.main{
-    
-}
+
 .main_slider{
 	display: flex;	
 }
@@ -177,13 +173,14 @@ body{
 }
 .main_lista{
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
     text-align: center;
 	height: auto;
 }
 .main_lista_curso{
 	height: auto;
-	width: auto;
+	width: 20%;
 	margin: 1em 5em ;
 	cursor: pointer;
 	border: 0.5px solid #DD6B4D;
