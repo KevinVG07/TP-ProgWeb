@@ -365,15 +365,18 @@ body{
 /*------------------DETALLE DE CURSO------------------------------------------------------------*/
 .detalle{
 display: flex;
-justify-content: space-around;
+margin-top: 2em;
 }
+
 .detalle article img{
 	width: 70%;
-	margin-top: 2em;
+	margin-left: 20%;
 }
-.detalle article{
-	flex-direction: column;
+.detalle p{
+	font-weight: bold;
+	padding: 0.2em;
 }
+
 .docente div{
 	margin-top: 2em;
 }
