@@ -361,3 +361,31 @@ body{
 	border-radius: 5px 5px;
 	cursor: pointer;
 }
+
+/*------------------DETALLE DE CURSO------------------------------------------------------------*/
+.detalle{
+display: flex;
+justify-content: space-around;
+}
+.detalle article img{
+	width: 70%;
+	margin-top: 2em;
+}
+.detalle article{
+	flex-direction: column;
+}
+.docente div{
+	margin-top: 2em;
+}
+.docente article{
+display: flex;
+justify-content: space-around;
+}
+.docente article{
+	border:1px solid;
+}
+
+.cursos_relacionados{
+	display: flex;
+
+}
