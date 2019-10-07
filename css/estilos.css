@@ -216,12 +216,11 @@ body{
 	margin: 0.5em 0em;
 	padding: 0.5em 0em; 
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 }
 .duracion_horas{
 	width: 5em;
 	display: flex;
-	flex-direction: row;
 	color: #183661;
 	text-align: center;
 }
@@ -234,13 +233,12 @@ body{
 	padding: 0.5em 0em 0.2em 0em;
 }
 .nombre_curso_detalles_masInfo{
-	margin: 0em 0.5em 0em 0em;
+	margin-right: 0.2em;
 }
 .nombre_curso_detalles_masInfo p{
 	text-align: right;
 }
 .nombre_curso_detalles_masInfo h3{
-	padding: 0em;
 	margin-bottom: 0.3em;
 	text-align: right;
 }
@@ -251,12 +249,22 @@ body{
 	font-size: 1em;
     font-weight: bold;
    /* height: 1.5em;*/
-   padding: 0.5em 0em 0em 0em;
+   padding: 0.5em;
     width: auto;
     color:#DAE1E7;
     background:#DD6B4D;
+    cursor: pointer;
 }
-
+.enlace_detalle{
+	text-decoration: none;
+	font-weight: bold;
+	color: #183661;
+	padding: 0.2em;
+}
+.enlace_detalle:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
 .main_tarjetas{
 	display: flex;
     justify-content: center;
@@ -437,6 +445,14 @@ margin-top: 2em;
 .texto a{
 	text-decoration: none;
 	color: white;
+}
+.contenido_titulo h2{
+	margin-top: 1em;
+	font-weight: bold;
+	margin-bottom: 0.5em;
+}
+.contenidos{
+	border:1px solid;
 }
 .docente div{
 	margin: 1em;
