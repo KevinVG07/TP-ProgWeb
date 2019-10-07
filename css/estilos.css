@@ -404,34 +404,63 @@ body{
 	cursor: pointer;
 }
 
-/*------------------DETALLE DE CURSO------------------------------------------------------------*/
+/*-------------------------DETALLE DE CURSO-------------------------------------------------------*/
 .detalle{
 display: flex;
 margin-top: 2em;
 }
 
 .detalle article img{
-	width: 70%;
+	width: 60%;
 	margin-left: 20%;
 }
-.detalle p{
+.texto{
+	width: 40%;
+}
+.texto h2{
+	background-color: #DD6B4D;
+}
+.texto h4{
 	font-weight: bold;
 	padding: 0.2em;
 }
+.texto p{
+	font-size: 14px;
+}
 
+.texto button{
+	margin-top: 1em;
+	border-radius: 7px;
+	background-color: #DD6B4D;
+	padding: 0.5em;
+}
+.texto a{
+	text-decoration: none;
+	color: white;
+}
 .docente div{
-	margin-top: 2em;
+	margin: 1em;
 }
 .docente article{
 display: flex;
 justify-content: space-around;
+border:1px solid #183661;
 }
-.docente article{
-	border:1px solid;
+.docente h2{
+	
+	font-weight: bold;
+	margin-left: 2em;
 }
-
+.docente img{
+	height: 90px;
+	width: 50%;
+	border-radius: 50%;
+	border: 1px solid;
+	margin-left: 5%;
+}
 .cursos_relacionados{
 	display: flex;
+	margin-top: 1em;
 
 }
 /*----------------------------GitfCar.html.main-----------------------------*/
