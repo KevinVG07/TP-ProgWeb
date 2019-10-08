@@ -43,6 +43,13 @@ body{
 	padding: 1em 2em;
 	border-radius: 1em 1em 1em 1em;
 	background-color: #DAE1E7;
+    display: block;
+}
+.header_contenedor_buscar span{
+    position: relative;
+    bottom: 3.75em;
+    left: 25.3em;
+    color: #183661;
 }
 .header_contenedor_carrito {
 	width: 15em;
@@ -233,17 +240,17 @@ body{
 	padding: 0.5em 0em 0.2em 0em;
 }
 .nombre_curso_detalles_masInfo{
-	margin-right: 0.2em;
+    display: flex;
+	flex-flow: column-reverse;
 }
 .nombre_curso_detalles_masInfo p{
 	text-align: right;
 }
 .nombre_curso_detalles_masInfo h3{
-	margin-bottom: 0.3em;
-	text-align: right;
+    text-align: center;
 }
 .main_lista_curso_texto a{
-	margin: 0.5em 0em 0em 7em;
+    text-align: center;
 }
 .main_lista_curso_texto a input{
 	font-size: 1em;
@@ -457,10 +464,12 @@ margin-top: 2em;
 .docente div{
 	margin: 1em;
 }
+.docente span{
+    color: #DD6B4D;
+}
 .docente article{
-display: flex;
-justify-content: space-around;
-border:1px solid #183661;
+    display: flex;
+    border:1px solid #183661;
 }
 .docente h2{
 	
