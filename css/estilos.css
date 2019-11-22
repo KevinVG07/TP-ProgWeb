@@ -1,7 +1,7 @@
 *{
 	padding: 0;
 	margin: 0;
-	/*box-sizing: border-box;*/
+	box-sizing: border-box;
 }
 header{
 	width: 100%;	
@@ -276,6 +276,15 @@ body{
 	display: flex;
     justify-content: center;
 }
+
+/*----------------------------------------------CALENDARIO----------------------------------------------*/
+  #calendar {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    margin-bottom: 2em;
+    margin-top: 2em;
+  }
 
 /*----------------------------------------------------CONTACTO.HTML MAIN------------------------------------------*/
 
