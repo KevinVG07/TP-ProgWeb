@@ -30,3 +30,16 @@ function validar(){
 		return false;
 	}
 }
+
+function contadorCaracteres(){
+	var total = 1000;
+	setInterval(function(){
+		
+		var contador = document.getElementById("consulta").value;
+		
+		if (contador.length<=total) {
+			var restante = total - contador.length;
+			document.getElementById("consulta_vista").innerHTML=contador.length+"/1000 - Te quedan: "+restante+ " caracteres";
+		}
+	},0000);
+}

@@ -57,8 +57,9 @@
                         <label for="telefono">Telefono</label>
                         <input type="tel" id="telefono" name="telefono">
                         <label for="consulta">Consulta</label>
-                        <textarea name="consulta" id="consulta" cols="20" rows="7" required></textarea>
-                        <input type="submit" class="button" value="Enviar Consulta">
+                        <textarea name="consulta" id="consulta" onkeyup="contadorCaracteres();" cols="20" rows="7" required></textarea>
+                        <div id="consulta_vista"></div>
+                        <input type="submit" class="consulta_enviar" value="Enviar Consulta">
                         <div id="mensaje" class="error"></div>
                     </form>
             </article>
