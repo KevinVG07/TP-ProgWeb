@@ -2,9 +2,15 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
     <title>Cursos Digitales</title>
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
     <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/select2.css">
+    <link rel="stylesheet" href="css/select2.min.css">
+    <script src="Js/jquery-3.4.1.min.js"></script>
+    <script src="Js/inscripcion.js"></script>
+    <script src="Js/select2.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css?family=Karla&display=swap');
     </style>
@@ -48,66 +54,39 @@
         <div class="main_subrrayado_tituloH2">
             <h2>Inscripcion</h2>
         </div>
-        <article class="main_planilla">
+        <section class="main_planilla">
            <h3>Complete sus datos y eliga los cursos que desea inscribirse</h3>
-            <section class="main_planilla_form">
-               <form action="#" method="get" enctype="application/x-www-form-urlencoded">
-                <label for="nombre_1">Nombre y Apellido</label>
-                <input type="text" id="nombre_1" required>
-                <label for="dni_1">Documento</label>
-                <input type="text" id="dni_1" required>
-                <label for="">Curso 1</label>
-                <input type="checkbox">
-                <label for="">Curso 2</label>
-                <input type="checkbox">
-                <label for="">Curso 3</label>
-                <input type="checkbox">
-                <label for="">Curso 4</label>
-                <input type="checkbox">
-                <label for="">Curso 5</label>
-                <input type="checkbox">
-                <label for="">Curso 6</label>
-                <input type="checkbox">
-            <br>
-                <label for="nombre_2">Nombre y Apellido</label>
-                <input type="text" id="nombre_2" required>
-                <label for="dni_2">Documento</label>
-                <input type="text" id="dni_2" required>
-                <label for="">Curso 1</label>
-                <input type="checkbox">
-                <label for="">Curso 2</label>
-                <input type="checkbox">
-                <label for="">Curso 3</label>
-                <input type="checkbox">
-                <label for="">Curso 4</label>
-                <input type="checkbox">
-                <label for="">Curso 5</label>
-                <input type="checkbox">
-                <label for="">Curso 6</label>
-                <input type="checkbox">
-            <br>
-                <label for="nombre_3">Nombre y Apellido</label>
-                <input type="text" id="nombre_3" required>
-                <label for="dni_3">Documento</label>
-                <input type="text" id="dni_3" required>
-                <label for="">Curso 1</label>
-                <input type="checkbox">
-                <label for="">Curso 2</label>
-                <input type="checkbox">
-                <label for="">Curso 3</label>
-                <input type="checkbox">
-                <label for="">Curso 4</label>
-                <input type="checkbox">
-                <label for="">Curso 5</label>
-                <input type="checkbox">
-                <label for="">Curso 6</label>
-                <input type="checkbox">
-                <br>
-                <label for="">Precio final: $5000</label>
-                <button>PAGAR</button>
+            <article class="main_planilla_form">
+
+                <div class="formulario">
+
+                <form class="a_clonar" action="#" method="post">
+                    <label for="nombre_1">Nombre y Apellido</label>
+                    <input type="text" id="nombre_1" required>
+                    <label for="dni_1">Documento</label>
+                    <input type="text" id="dni_1" required>
+                    <select class="seleccion-curso" multiple="multiple">
+                        <option selected="selected">Curso de Lettering</option>
+                        <option>Curso de Travel Hacking</option>
+                        <option>Curso de Paper Craft</option>
+                        <option>Curso de Fotografia</option>
+                        <option>Curso de Cocina Italiana</option>
+                        <option selected="selected">Curso de Cocina Mexicana</option>
+                    </select>
+                    <div class="botones">
+                        <div ><img class="eliminar"src="img/eliminar.ico" ></div>
+                        <div ><img class="clonar" src="img/agregar.ico" ></div>
+                    </div>
                 </form>
-            </section>
-        </article>
+
+                </div>
+
+                <div class="precio_final"><h4>Precio final: $5000</h4>
+                <button>PAGAR</button></div>
+                <!--<div class="imagen_agregar" >Agregar Persona<img id="clonar" src="img/agregar.ico"></div>-->
+
+            </article>
+        </section>
    </main>
    <footer class="footer">
         <div class="footer_integrantes">

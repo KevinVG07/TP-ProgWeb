@@ -3,6 +3,13 @@
 	margin: 0;
 	box-sizing: border-box;
 }
+
+
+
+
+
+
+
 header{
 	width: 100%;	
 }
@@ -139,6 +146,10 @@ body{
 	text-decoration: none;
 	margin: 1em;
 }
+
+
+
+
 
 /*------------------------------------------------------INDEX.HTML MAIN---------------------------------------*/
 
@@ -279,7 +290,7 @@ body{
 
 /*----------------------------------------------CALENDARIO----------------------------------------------*/
   #calendar {
-    max-width: 900px;
+    width: 90%;
     margin: 0 auto;
     background-color: white;
     margin-bottom: 2em;
@@ -403,6 +414,7 @@ body{
 }
 .main_planilla_form{
     margin: 1em;
+    margin-bottom: 3em;
 }
 .main_planilla_form label{
     font-size: 1em;
@@ -418,7 +430,13 @@ body{
 	border: 1px hidden #DD6B4D;
 	border-radius: 5px 5px;
 }
-.main_planilla_form button{
+.precio_final{
+	float: right;
+	position: relative;
+	top:4em;
+}
+.precio_final button{
+	float: right;
     margin: 2em;
 	padding: 1em;
 	background: #1C4B82;
@@ -426,6 +444,22 @@ body{
 	color: white;
 	border-radius: 5px 5px;
 	cursor: pointer;
+
+}
+.botones{
+	float: right;
+	margin-left: 1em;
+
+}
+/*.imagen_agregar{
+position: relative;
+cursor: pointer;
+top:-5em;
+left: 1em;
+}*/
+
+.formulario select{
+	width: 28%
 }
 
 /*-------------------------DETALLE DE CURSO-------------------------------------------------------*/
@@ -719,6 +753,43 @@ margin-top: 2em;
 }
 
 
+@media screen and (max-width: 47em){
+	.main_planilla_form{
+		   margin: 0.5em;
+    margin-bottom: 1.5em;
+    
+	}
+	.formulario{
+		display: flex;
+	}
+	.formulario label,input,select{
+	max-width: 100%;
+	margin-bottom: 2em;
+	align-items: center;
+	font-weight: bold;
 
+	}
+	.formulario input{
+		display: block;
+		width: 100%;
+		margin-bottom: 1em;
+	}
+.formulario form label{
+	margin-top: 1em;
+	display: block;
 
+}
+.formulario select{
+	margin-top: 2em;
+	width: 100%
+}
 
+.precio_final h4{
+	display: block;
+	width: 100%;
+}
+.botones{
+	margin-top: 0.2em;
+}
+
+}
