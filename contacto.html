@@ -5,6 +5,7 @@
     <title>Curso Digitales</title>
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
     <link rel="stylesheet" href="css/font.css">
+    <script src="Js/contacto.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css?family=Karla&display=swap');
     </style>
@@ -48,16 +49,17 @@
         <section class="main_contenido">
             <article class="main_contenido_consulta">
                     <h3>Envianos tu consulta. Te responderemos a la brevedad</h3>
-                    <form action="#" method="get" enctype="application/x-www-form-urlencoded">
+                    <form action="#" method="get" onsubmit="return validar();" enctype="application/x-www-form-urlencoded">
                         <label for="nombre">Nombre y Apellido</label>
-                        <input type="text" id="nombre" name="nombre" required>
+                        <input type="text" id="nombre" name="nombre">
                         <label for="email">Correo Electronico</label>
                         <input type="email" id="email" name="email" required>
                         <label for="telefono">Telefono</label>
                         <input type="tel" id="telefono" name="telefono">
                         <label for="consulta">Consulta</label>
                         <textarea name="consulta" id="consulta" cols="20" rows="7" required></textarea>
-                        <button>Enviar Consulta</button>
+                        <input type="submit" class="button" value="Enviar Consulta">
+                        <div id="mensaje" class="error"></div>
                     </form>
             </article>
             <article class="main_contenido_info">

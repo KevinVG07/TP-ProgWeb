@@ -342,7 +342,7 @@ body{
 	max-height: 20em;
 	min-height: 5em;
 }
-.main_contenido_consulta button{
+.button{
 	margin: 1.5em 1em 1em 1em;
 	padding:1em;
 	background: #1C4B82;
