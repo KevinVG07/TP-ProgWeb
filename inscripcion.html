@@ -6,11 +6,8 @@
     <title>Cursos Digitales</title>
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
     <link rel="stylesheet" href="css/font.css">
-    <link rel="stylesheet" href="css/select2.css">
-    <link rel="stylesheet" href="css/select2.min.css">
     <script src="Js/jquery-3.4.1.min.js"></script>
     <script src="Js/inscripcion.js"></script>
-    <script src="Js/select2.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css?family=Karla&display=swap');
     </style>
@@ -55,37 +52,30 @@
             <h2>Inscripcion</h2>
         </div>
         <section class="main_planilla">
-           <h3>Complete sus datos y eliga los cursos que desea inscribirse</h3>
+           <h3>Complete con sus datos para inscribirse al curso</h3>
             <article class="main_planilla_form">
 
-                <div class="formulario">
-
                 <form class="a_clonar" action="#" method="post">
-                    <label for="nombre_1">Nombre y Apellido</label>
+                    <label for="nombre_1">Nombre</label>
                     <input type="text" id="nombre_1" required>
+                    <label for="apellido_1">Apellido</label>
+                    <input type="text" id="apellido_1" required>
                     <label for="dni_1">Documento</label>
                     <input type="text" id="dni_1" required>
-                    <select class="seleccion-curso" multiple="multiple">
-                        <option selected="selected">Curso de Lettering</option>
-                        <option>Curso de Travel Hacking</option>
-                        <option>Curso de Paper Craft</option>
-                        <option>Curso de Fotografia</option>
-                        <option>Curso de Cocina Italiana</option>
-                        <option selected="selected">Curso de Cocina Mexicana</option>
-                    </select>
-                    <div class="botones">
-                        <div ><img class="eliminar"src="img/eliminar.ico" ></div>
-                        <div ><img class="clonar" src="img/agregar.ico" ></div>
-                    </div>
+                    
+                    <button id="sumar" class="clonar"><img src="img/agregar.ico"></button>
+                    <button id="restar" class="eliminar"><img src="img/eliminar.ico" ></button>
                 </form>
 
-                </div>
-
-                <div class="precio_final"><h4>Precio final: $5000</h4>
-                <button>PAGAR</button></div>
-                <!--<div class="imagen_agregar" >Agregar Persona<img id="clonar" src="img/agregar.ico"></div>-->
+                <div class="precio_final"><h4>Precio final:$<span id="total">4830</span></h4>
+                <button onclick="mostrarVentana()">INSCRIBIRSE</button></div>
 
             </article>
+            <div id="miVentana" >
+                <h2>RESUMEN DE INSCRIPCIÓN</h2>
+                <div id="resultado"></div>
+                <button onclick="ocultarVentana()">PAGAR</button>
+            </div>
         </section>
    </main>
    <footer class="footer">
@@ -110,5 +100,8 @@
             <a href="https://www.instagram.com/" target="_blank" class="footer_redes__link"><span class="icon-instagram"></span></a>
         </div>
     </footer>
+
 </body>
+
+
 </html>

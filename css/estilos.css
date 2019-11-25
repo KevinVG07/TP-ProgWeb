@@ -477,7 +477,7 @@ font-weight: normal;
 border: #333 2px solid; 
 background-color: #FAFAFA; 
 color: #000; 
-display:none
+display:none;
 }
 #miVentana button{
 	position: relative;
@@ -493,17 +493,6 @@ display:none
 	width: 15%;
 	height: 15%;
 }
-
-/*.imagen_agregar{
-position: relative;
-cursor: pointer;
-top:-5em;
-left: 1em;
-}*/
-
-/*.formulario select{
-	width: 28%
-}*/
 
 /*-------------------------DETALLE DE CURSO-------------------------------------------------------*/
 .detalle{
