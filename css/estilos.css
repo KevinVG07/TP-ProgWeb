@@ -337,7 +337,13 @@ body{
 	max-height: 20em;
 	min-height: 5em;
 }
-.main_contenido_consulta button{
+#consulta_vista{
+	color: #000;
+	font-weight: bold;
+	font-size: 10px;
+}
+
+.consulta_enviar{
 	margin: 1.5em 1em 1em 1em;
 	padding:1em;
 	background: #1C4B82;
@@ -583,28 +589,21 @@ margin-top: 2em;
 	margin: 2em 1em 2em 1em;
 }
 .divDestinatario{
-	height: 21em;
-	width: 23em;
-	padding: 1em;
-	text-align: center;
-	background-color: grey;
-	border-radius: 1em;
-	position: relative;
-}
-.divDestinatario:hover{
-	height: 40em;
+	height: 20em;
 	width: 40em;
 	padding: 1em;
 	text-align: center;
-	background-color: grey;
+	background: grey;
 	border-radius: 1em;
-	position: absolute;
+	position: relative;
+	word-wrap: break-word;
 }
 .divDestinatario h3{
-	margin-top: 6em;
+	margin-top: 1em;
+	align-self: center;
 }
 .divDestinatario h2{
-	margin-top: 1em;
+	margin-top: 0.5em;
 }
 .montoDivDestinatario{
 	position: absolute;
@@ -620,9 +619,8 @@ margin-top: 2em;
 	padding: 0em 0em 0.5em 0.3em;
 	margin-top: 0.5;
 }
-.vistaPreviaDestinatario h3{
-	margin: 3em 1em;
-	text-align: center;
+.vistaPreviaDestinatario{
+	align-items: center;
 }
 .divSectionGiftCardDerecha{
 	display: flex;
@@ -650,7 +648,8 @@ margin-top: 2em;
 #nombreDelDestinatario:hover{
 	background-color: lightgrey;
 	border-radius: 0.5em;
-	height: 3em;
+	height: 4em;
+	width: 30em;
 }
 .divColor-Fondo{
 	display: flex;
@@ -682,9 +681,25 @@ margin-top: 2em;
 .backColorNaranja{
 	background-color: orange;
 }
-.backColorLila{
-	background-color: violet;
+.backColorRosa{
+	background-color: pink;
 }
+.backColorNegro{
+	background-color: black;
+}
+.backColorGris{
+	background-color: grey;
+}
+.backColorVioleta{
+	background-color: purple;
+}
+.backColorAzul{
+	background-color: navy;
+}
+.backColorMarino{
+	background-color: teal;
+}
+
 .divInputColor-Fondo{
 	padding: 0.3em 1em 0em 1em;
 }
@@ -718,8 +733,8 @@ margin-top: 2em;
 .monto input:hover{
 	background-color: lightgrey;
 	border-radius: 0.5em;
-	height: 3em;
-	width: 25em;
+	height: 4em;
+	width: 30em;
 }
 .divUbicacion{
 	display: flex;
@@ -789,6 +804,40 @@ margin-top: 2em;
 	border-radius: 1em;
 }
 
+/*----PARA UBICACION DEL IMPORTE*/
+.divUbicacionMontoAbajoDerecha{
+	position: absolute;
+	width: 7em;
+	height: 3em;
+	bottom: 0em;
+	right: 0em;
+	background-color: black;
+	color: white;
+	border-radius: 0em 1em 0em 1em;
+}
+
+.divUbicacionMontoArribaIzquierda{
+	position: absolute;
+	width: 7em;
+	height: 3em;
+	top: 0em;
+	left: 0em;
+	background-color: black;
+	color: white;
+	border-radius: 0em 1em 0em 1em;
+}
+
+.divUbicacionMontoArribaDerecha{
+	position: absolute;
+	width: 7em;
+	height: 3em;
+	top: 0em;
+	right: 0em;
+	background-color: black;
+	color: white;
+	border-radius: 0em 1em 0em 1em;
+}
+/*-----------------------------------*/
 
 @media screen and (max-width: 47em){
 	.main_planilla_form{

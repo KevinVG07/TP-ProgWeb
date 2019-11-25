@@ -5,6 +5,7 @@
     <title>Curso Digitales</title>
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
     <link rel="stylesheet" href="css/font.css">
+    <script src="Js/giftCard.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css?family=Karla&display=swap');
     </style>
@@ -47,12 +48,12 @@
     <main class="main">
         <section class="sectionGiftCard">
             <div class="divSectionGiftCardIzquierda">
-                <div class="divDestinatario">
-                    <h3>GiftCard para</h3>
-                    <h2>Destinatario</h2>
-                    <div class="montoDivDestinatario">
-                    <h2>$0000.-</h2>
-                </div>
+                <div class="divDestinatario" id="fondo">
+                    <h3 id="nombreDD">GiftCard para</h3>
+                    <h3 id="nombreD">Destinatario</h3>
+                    <div id="fondoMonto" class="montoDivDestinatario">
+                        <h2 id="importe">$0000</h2>
+                    </div>
                 </div>
                 <div class="vistaPreviaDestinatario">
                     <h3>Vista previa de resultado de personalización</h3>
@@ -62,43 +63,43 @@
                 <h3>Personalización de GiftCard</h3>
                 <div class="divImputDestinatario">
                     <!--<label for="nombreDelDestinatario"></label>-->
-                    <input id="nombreDelDestinatario" type="text" name="nombreDelDestinatario" placeholder="Nombre del Destinatario" >
+                    <input id="nombreDelDestinatario" type="text" name="nombreDelDestinatario" placeholder="Nombre del Destinatario" onkeyup="nombreDestinatario();">
                 </div>
                 <h4>Color</h4>
                 <div class="divColor-Fondo">
                     <div class="divContenedorColor-Fondo">
-                        <div class="divMuestraColor-Fondo backColorRojo">
+                        <div class="divMuestraColor-Fondo backColorNegro">
                         </div>
                         <div class="divInputColor-Fondo">
-                            <input id="color" type="radio" name="tipo_color" value="rojo">
+                            <input id="color" type="radio" name="tipo_color" value="negro" checked onclick="cambiarColor(this.value)">
                         </div>
                     </div>
                     <div class="divContenedorColor-Fondo">
-                        <div class="divMuestraColor-Fondo backColorVerde">
+                        <div class="divMuestraColor-Fondo backColorGris">
                         </div>
                         <div class="divInputColor-Fondo">
-                            <input id="color" type="radio" name="tipo_color" value="verde" checked>
+                            <input id="color" type="radio" name="tipo_color" value="gris" onclick="cambiarColor(this.value)">
                         </div>
                     </div>
                     <div class="divContenedorColor-Fondo">
-                        <div class="divMuestraColor-Fondo backColorAmarillo">
+                        <div class="divMuestraColor-Fondo backColorVioleta">
                         </div>
                         <div class="divInputColor-Fondo">
-                            <input id="color" type="radio" name="tipo_color" value="amarillo">
+                            <input id="color" type="radio" name="tipo_color" value="violeta" onclick="cambiarColor(this.value)">
                         </div>
                     </div>
                     <div class="divContenedorColor-Fondo">
-                        <div class="divMuestraColor-Fondo backColorNaranja">
+                        <div class="divMuestraColor-Fondo backColorAzul">
                         </div>
                         <div class="divInputColor-Fondo">
-                            <input id="color" type="radio" name="tipo_color" value="naranja">
+                            <input id="color" type="radio" name="tipo_color" value="azul" onclick="cambiarColor(this.value)">
                         </div>
                     </div>
                     <div class="divContenedorColor-Fondo">
-                        <div class="divMuestraColor-Fondo backColorLila">
+                        <div class="divMuestraColor-Fondo backColorMarino" >
                         </div>
                         <div class="divInputColor-Fondo">
-                            <input id="color" type="radio" name="tipo_color" value="lila">
+                            <input id="color" type="radio" name="tipo_color" value="marino" onclick="cambiarColor(this.value)">
                         </div>
                     </div>
                 </div>
@@ -107,37 +108,37 @@
                     <div class="divContenedorTamanoFuente">
                             <h4>20px</h4>
                             <div class="divInputTamanoFuente">
-                            <input id="fuente" type="radio" name="tipo_fuente" value="20px">
+                            <input id="fuente" type="radio" name="tipo_fuente" value="20" onclick="cambiarTamanio(this.value)">
                             </div>
                     </div>
                     <div class="divContenedorTamanoFuente">
                             <h4>28px</h4>
                             <div class="divInputTamanoFuente">
-                            <input id="fuente" type="radio" name="tipo_fuente" value="28px" checked>
+                            <input id="fuente" type="radio" name="tipo_fuente" value="28" checked onclick="cambiarTamanio(this.value)">
                             </div>
                     </div>
                     <div class="divContenedorTamanoFuente">
                             <h4>32px</h4>
                             <div class="divInputTamanoFuente">
-                            <input id="fuente" type="radio" name="tipo_fuente" value="32px">
+                            <input id="fuente" type="radio" name="tipo_fuente" value="32" onclick="cambiarTamanio(this.value)">
                             </div>
                     </div>
                     <div class="divContenedorTamanoFuente">
                             <h4>48px</h4>
                             <div class="divInputTamanoFuente">
-                            <input id="fuente" type="radio" name="tipo_fuente" value="48px">
+                            <input id="fuente" type="radio" name="tipo_fuente" value="48" onclick="cambiarTamanio(this.value)">
                             </div>        
                     </div>
                     <div class="divContenedorTamanoFuente">
                             <h4>60px</h4>
                             <div class="divInputTamanoFuente">
-                            <input id="fuente" type="radio" name="tipo_fuente" value="60px">
+                            <input id="fuente" type="radio" name="tipo_fuente" value="60" onclick="cambiarTamanio(this.value)">
                             </div>
                     </div>
                 </div>
                 <div class="monto">
-                    <label for="monto">Monto $</label>
-                    <input id="monto" type="number" name="monto" placeholder="Ingrese su monto" min="0" max="7000">
+                    <label for="monto">Importe $</label>
+                    <input id="monto" type="number" name="monto" placeholder="Ingrese su monto" min="0" max="7000" onkeyup="importeDestinatario();">
                 </div>
                 <h4>Ubiación</h4>
                 <div class="divUbicacion">
@@ -147,7 +148,7 @@
                         </div> 
                         </div>
                         <div class="divInputUbicacion">
-                            <input id="ubicacion" type="radio" name="tipo_ubicacion" value="abajoDerecha">
+                            <input id="ubicacion" type="radio" name="tipo_ubicacion" value="abajoDerecha" onclick="posicionImporte(this.value)">
                         </div>
                     </div>
                     <div class="divContenedorUbicacion">
@@ -156,7 +157,7 @@
                         </div>
                         </div>
                         <div class="divInputUbicacion">
-                            <input id="ubicacion" type="radio" name="tipo_ubicacion" value="arribaIzquierda" checked>
+                            <input id="ubicacion" type="radio" name="tipo_ubicacion" value="arribaIzquierda" onclick="posicionImporte(this.value)">
                         </div>
                     </div>
                     <div class="divContenedorUbicacion">
@@ -165,7 +166,7 @@
                         </div>
                         </div>
                         <div class="divInputUbicacion">
-                            <input id="ubicacion" type="radio" name="tipo_ubicacion" value="arribaDerecha">
+                            <input id="ubicacion" type="radio" name="tipo_ubicacion" value="arribaDerecha" checked onclick="posicionImporte(this.value)">
                         </div>
                     </div>
                 </div>
@@ -175,35 +176,35 @@
                         <div class="divMuestraColor-Fondo backColorRojo">
                         </div>
                         <div class="divInputColor-Fondo">
-                            <input id="fondo" type="radio" name="tipo_fondo" value="azul">
+                            <input id="fondo" type="radio" name="tipo_fondo" value="rojo" onclick="cambiarFondo(this.value)">
                         </div>
                     </div>
                     <div class="divContenedorColor-Fondo">
                         <div class="divMuestraColor-Fondo backColorVerde">
                         </div>
                         <div class="divInputColor-Fondo">
-                            <input id="fondo" type="radio" name="tipo_fondo" value="verde" checked>
+                            <input id="fondo" type="radio" name="tipo_fondo" value="verde" onclick="cambiarFondo(this.value)">
                         </div>
                     </div>
                     <div class="divContenedorColor-Fondo">
                         <div class="divMuestraColor-Fondo backColorAmarillo">
                         </div>
                         <div class="divInputColor-Fondo">
-                            <input id="fondo" type="radio" name="tipo_fondo" value="amarillo">
+                            <input id="fondo" type="radio" name="tipo_fondo" value="amarillo" onclick="cambiarFondo(this.value)">
                         </div>
                     </div>
                     <div class="divContenedorColor-Fondo">
                         <div class="divMuestraColor-Fondo backColorNaranja">
                         </div>
                         <div class="divInputColor-Fondo">
-                            <input id="fondo" type="radio" name="tipo_fondo" value="naranja">
+                            <input id="fondo" type="radio" name="tipo_fondo" value="naranja" onclick="cambiarFondo(this.value)">
                         </div>
                     </div>
                     <div class="divContenedorColor-Fondo">
-                        <div class="divMuestraColor-Fondo backColorLila">
+                        <div class="divMuestraColor-Fondo backColorRosa">
                         </div>
                         <div class="divInputColor-Fondo">
-                            <input id="fondo" type="radio" name="tipo_fondo" value="lila">
+                            <input id="fondo" type="radio" name="tipo_fondo" value="lila" onclick="cambiarFondo(this.value)">
                         </div>
                     </div>
                 </div>
