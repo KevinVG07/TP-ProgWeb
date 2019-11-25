@@ -106,7 +106,23 @@ function cambiarTamanio(valor){
 		case "60":
 		document.getElementById("nombreD").style.fontSize="60px";
 		document.getElementById("nombreDD").style.fontSize="60px";
-		
+
+		break;
+	}
+}
+
+function posicionImporte(valor){
+	switch(valor){
+		case "abajoDerecha":
+		document.getElementById("fondoMonto").className = "divUbicacionMontoAbajoDerecha";
+		break;
+
+		case "arribaIzquierda":
+		document.getElementById("fondoMonto").className = "divUbicacionMontoArribaIzquierda";
+		break;
+
+		case "arribaDerecha":
+		document.getElementById("fondoMonto").className = "divUbicacionMontoArribaDerecha";
 		break;
 	}
 }

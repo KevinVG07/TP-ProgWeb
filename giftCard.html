@@ -52,8 +52,8 @@
                     <h3 id="nombreDD">GiftCard para</h3>
                     <h3 id="nombreD">Destinatario</h3>
                     <div id="fondoMonto" class="montoDivDestinatario">
-                    <h2 id="importe">$0000</h2>
-                </div>
+                        <h2 id="importe">$0000</h2>
+                    </div>
                 </div>
                 <div class="vistaPreviaDestinatario">
                     <h3>Vista previa de resultado de personalización</h3>
@@ -148,7 +148,7 @@
                         </div> 
                         </div>
                         <div class="divInputUbicacion">
-                            <input id="ubicacion" type="radio" name="tipo_ubicacion" value="abajoDerecha">
+                            <input id="ubicacion" type="radio" name="tipo_ubicacion" value="abajoDerecha" onclick="posicionImporte(this.value)">
                         </div>
                     </div>
                     <div class="divContenedorUbicacion">
@@ -157,7 +157,7 @@
                         </div>
                         </div>
                         <div class="divInputUbicacion">
-                            <input id="ubicacion" type="radio" name="tipo_ubicacion" value="arribaIzquierda" >
+                            <input id="ubicacion" type="radio" name="tipo_ubicacion" value="arribaIzquierda" onclick="posicionImporte(this.value)">
                         </div>
                     </div>
                     <div class="divContenedorUbicacion">
@@ -166,7 +166,7 @@
                         </div>
                         </div>
                         <div class="divInputUbicacion">
-                            <input id="ubicacion" type="radio" name="tipo_ubicacion" value="arribaDerecha" checked>
+                            <input id="ubicacion" type="radio" name="tipo_ubicacion" value="arribaDerecha" checked onclick="posicionImporte(this.value)">
                         </div>
                     </div>
                 </div>

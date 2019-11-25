@@ -767,6 +767,40 @@ margin-top: 2em;
 	border-radius: 1em;
 }
 
+/*----PARA UBICACION DEL IMPORTE*/
+.divUbicacionMontoAbajoDerecha{
+	position: absolute;
+	width: 7em;
+	height: 3em;
+	bottom: 0em;
+	right: 0em;
+	background-color: black;
+	color: white;
+	border-radius: 0em 1em 0em 1em;
+}
+
+.divUbicacionMontoArribaIzquierda{
+	position: absolute;
+	width: 7em;
+	height: 3em;
+	top: 0em;
+	left: 0em;
+	background-color: black;
+	color: white;
+	border-radius: 0em 1em 0em 1em;
+}
+
+.divUbicacionMontoArribaDerecha{
+	position: absolute;
+	width: 7em;
+	height: 3em;
+	top: 0em;
+	right: 0em;
+	background-color: black;
+	color: white;
+	border-radius: 0em 1em 0em 1em;
+}
+/*-----------------------------------*/
 
 @media screen and (max-width: 47em){
 	.main_planilla_form{
