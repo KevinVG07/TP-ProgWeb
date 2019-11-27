@@ -5,6 +5,14 @@
 	<title>Curso</title>
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
 	<link rel="stylesheet" href="css/font.css">
+    <script src="Js/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <script src="Js/ocultarMostrarDetalleCurso.js"></script>
+    <script src="Js/modalDetalleCurso.js"></script>
+    <script src="Js/incrementarIndexCompra.js"></script>
+    <!--<script src="Js/funcionesHamburguesaDesplegable.js"></script>-->
     <style>
         @import url('https://fonts.googleapis.com/css?family=Karla&display=swap');
     </style>
@@ -29,7 +37,7 @@
             </div>
             <div class="header_contenedor_carrito">
                     <div class="header_contenedor_carrito_contador">
-                        <p>0</p>
+                        <p id="totalContador">0</p>
                     </div>
                     <img src="img/carrito.png">   
             </div>
@@ -39,10 +47,11 @@
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="examples/background-events.html">Calendario</a></li>
                 <li><a href="giftcard.html">GiftCard</a></li>
-                <li><a href="inscripcion.html">Inscripcion</a></li>
+               <!-- <li><a href="inscripcion.html">Inscripcion</a></li>-->
                 <li><a href="contacto.html">Contactanos</a></li>
             </ul>
         </nav> 
+        <a class="desplegable"></a>
     </header>
     <main>
     	<section class="detalle">
@@ -51,23 +60,55 @@
     		</article>
     		<article class="texto">
     			<h2>Curso de Lettering</h2>
-    			<h4>Precio: </h4>
-                <p>$4830.-</p>
-    			<h4>Tiempo de dedicación necesario:</h4>
-                <p>4h 36m</p>
-    			<h4>Descripción del curso:</h4>
-                <p>En las primeras lecciones Gass Tonn te explicará qué es el lettering y su diferencia con otras disciplinas en la que la letra también es protagonista: la caligrafía y la tipografía.
+    			<a id="precioCurso" style="color: black"><h4>Precio: </h4></a>
+                <p id="textoPrecioCurso" style="display: none;">$4830.-</p>
+    			<a id="duracionCurso" style="color: black"><h4>Tiempo de dedicación necesario:</h4></a>
+                <p id="textoDuracionCurso" style="display: none;">4h 36m</p>
+    			<a id="descripcionCurso" style="color: black"><h4>Descripción del curso:</h4></a>
+                <p id="textoDescripcionCurso" style="display: none;">En las primeras lecciones Gass Tonn te explicará qué es el lettering y su diferencia con otras disciplinas en la que la letra también es protagonista: la caligrafía y la tipografía.
                 También aprenderás conceptos fundamentales para dibujar letras. Además, te mostrará cómo dibujar letras a mano con brush pen y descubrirás algunos ejercicios de calentamiento muy útiles para este tipo de técnica.
                 A continuación, verás principios de composición, esenciales para crear un layout armónico y legible.
                 Aprenderás a crear diferentes tipos de letra de manera completamente digital, comenzando con una tipografía modular a partir de formas geométricas. Después, realizarás un diseño monolínea y verás cómo crear tus propios pinceles para poder dibujar tus letras directamente en Illustrator.
                 Por último, combinarás todos los estilos en tu composición y llevarás tu diseño a Photoshop para darle los acabados finales. Aprenderás a crear letras con efectos neón y metalizadas, aplicarás luces, texturas y crearás un efecto glitch.</p>
-    			<h4>Requisitos previos:</h4>
-                <p>Son necesarios conocimientos básicos de Illustrator y Photoshop. Con respecto a los materiales, necesitarás lápices, marcadores, una computadora y una tableta digitalizadora.</p>
-    			<button><a href="inscripcion.html">INSCRIBIRSE</a></button>
+    			<a id="requisitosCurso" style="color: black"><h4>Requisitos previos:</h4></a>
+                <p id="textoRequisitosCurso" style="display: none;">Son necesarios conocimientos básicos de Illustrator y Photoshop. Con respecto a los materiales, necesitarás lápices, marcadores, una computadora y una tableta digitalizadora.</p>
+    			<button id="btnModalCurso"><a>INSCRIBIRSE</a></button>
+                <div id="modalCurso" style="display: none">
+                    <h1>¡Felicitaciones!</h1>
+                    <h2>Usted usted a elegido el curso de Lettering</h4>
+                    <h4>A continuación procederemos con los pasos de inscripción</h4>
+                    <button style="background-color: orange;
+                    "><a href="inscripcion.html"  style= "color: black; text-decoration: none;">Ingresar a pagina de inscripacion</a></button>
+                </div>
                 <div class="contenido_titulo"><h2>Contenidos por clase</h2></div>
-                <div class="contenidos"><h3>Introducción</h3></div>
-                <div class="contenidos"><h3>Unidad 1</h3></div>
-                <div class="contenidos"><h3>Unidad 2</h3></div>
+                <div class="contenidos">
+                    <a id="introduccion" style="color: black"><h3>Introducción</h3></a>
+                     <p id="introduccionParrafo" style="display: none;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+
+                <div class="contenidos">
+                    <a id="introduccion1" style="color: black"><h3>Unidad 1</h3></a>
+                     <p id="introduccionParrafo1" style="display: none;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="contenidos">
+                   <a id="introduccion2" style="color: black"><h3>Unidad 2</h3></a> 
+                     <p id="introduccionParrafo2" style="display: none;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
     		</article>
     	</section>
     	<section class="docente">
