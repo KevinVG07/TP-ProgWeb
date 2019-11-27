@@ -6,6 +6,8 @@
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
     <link rel="stylesheet" href="css/font.css">
     <script src="Js/jquery-3.4.1.min.js"></script>
+    <script src="Js/incrementarIndexCompra.js"></script>
+    
     <style>
         @import url('https://fonts.googleapis.com/css?family=Karla&display=swap');
     </style>
@@ -30,7 +32,7 @@
             </div>
             <div class="header_contenedor_carrito">
                     <div class="header_contenedor_carrito_contador">
-                        <p>0</p>
+                        <p id="totalContador">0</p>
                     </div>
                     <img src="img/carrito.png">   
             </div>
@@ -40,15 +42,19 @@
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="examples/background-events.html">Calendario</a></li>
                 <li><a href="giftcard.html">GiftCard</a></li>
-                <li><a href="inscripcion.html">Inscripcion</a></li>
+                <!--<li><a href="inscripcion.html">Inscripcion</a></li>-->
                 <li><a href="contacto.html">Contactanos</a></li>
             </ul>
         </nav> 
+        <a class="desplegable"></a>
     </header>
     <main class="main">
         <div class="main_slider">
-            <img src="img/fotografia.jpg" alt="">
-            <img src="img/lettering.jpg" alt="">  
+            <ul>
+                <li><img src="img/fotografia.jpg" alt="Carara de fotos con diferentes objetivos"></li> 
+                <li><img src="img/lettering.jpg" alt="Persona escribiendo en "> </li>  
+                <li><img src="img/cocina-italiana.jpg" alt="Plato con pasta y rucula" ></li> 
+            </ul>
         </div>
         <div class="main_subrrayado_tituloH2">
             <h2>Siga los siguientes pasos para inscribirse al curso que desee</h2>
@@ -83,7 +89,8 @@
                     <div class="nombre_curso_detalles_masInfo">
                     <h3>Curso de Lettering</h3>
                     <a class="enlace_detalle" href="detalleCurso.html">Ver Detalle</a>
-                    <a href="inscripcion.html"><input type="button" value="COMPRAR"></a>
+                    <a href="inscripcion.html"><input type="button" value="COMPRAR" onclick="incrementar()"></a>
+
                     </div>
                 </div>
             </article>
@@ -99,7 +106,7 @@
                     <div class="nombre_curso_detalles_masInfo">
                     <h3>Curso de Travel Hacking</h3>
                     <a class="enlace_detalle" href="detalleCurso.html">Ver Detalle</a>
-                    <a href="inscripcion.html"><input type="button" value="COMPRAR"></a>
+                    <a href="inscripcion.html"><input type="button" value="COMPRAR" onclick="incrementar()" ></a>
                     </div>
                 </div>
             </article>
@@ -115,7 +122,7 @@
                     <div class="nombre_curso_detalles_masInfo">
                     <h3>Curso de Paper Craft</h3>
                     <a class="enlace_detalle" href="detalleCurso.html">Ver Detalle</a>
-                    <a href="inscripcion.html"><input type="button" value="COMPRAR"></a>
+                    <a href="inscripcion.html"><input type="button" value="COMPRAR" onclick="incrementar()"></a>
                     </div>
                 </div>
             </article>
@@ -131,7 +138,7 @@
                     <div class="nombre_curso_detalles_masInfo">
                     <h3>Curso de Fotografia</h3>
                     <a class="enlace_detalle" href="detalleCurso.html">Ver Detalle</a>
-                    <a href="inscripcion.html"><input type="button" value="COMPRAR"></a>
+                    <a href="inscripcion.html"><input type="button" value="COMPRAR" onclick="incrementar()"></a>
                     </div>
                 </div>
             </article>
@@ -147,7 +154,7 @@
                     <div class="nombre_curso_detalles_masInfo">
                     <h3>Curso de Cocina Italiana</h3>
                     <a class="enlace_detalle" href="detalleCurso.html">Ver Detalle</a>
-                    <a href="inscripcion.html"><input type="button" value="COMPRAR"></a>
+                    <a href="inscripcion.html"><input type="button" value="COMPRAR" onclick="incrementar()"></a>
                     </div>
                 </div>
             </article>
@@ -163,7 +170,7 @@
                     <div class="nombre_curso_detalles_masInfo">
                     <h3>Curso de Cocina Mexicana</h3>
                     <a class="enlace_detalle" href="detalleCurso.html">Ver Detalle</a>
-                    <a href="inscripcion.html"><input type="button" value="COMPRAR"></a>
+                    <a href="inscripcion.html"><input type="button" value="COMPRAR" onclick="incrementar()"></a>
                     </div>
                 </div>
             </article>   
@@ -172,14 +179,26 @@
             <h2>Medios de pago</h2>
         </div>
         <section class="main_tarjetas">
-            <article>
-                <img src="img/visa.jpg">
+               <div class="article-pagoTarjetas">
+                <div class="tipoTarjeta">
+                <img src="img/visa.jpg" class="visa">
+                </div>
+                <div class="tipoTarjeta">
                 <img src="img/cabal.jpg">
+                </div>
+                <div class="tipoTarjeta">
                 <img src="img/nativa.jpg">
+                </div>
+                <div class="tipoTarjeta">
                 <img src="img/naranja.jpg">
+                </div>
+                <div class="tipoTarjeta">
                 <img src="img/mercadopago.png">
+                </div>
+                <div class="tipoTarjeta">
                 <img src="img/mastercard.png">
-            </article>
+                </div>
+            </div>
         </section>
     </main>
     <footer class="footer">
