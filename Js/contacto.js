@@ -15,6 +15,12 @@ function validar(){
 		mensajesError+="<p>El email ingresado no es valido</p>";
 	}
 	
+	/*if (regex.test($("#email").val())==false) {
+		error++;
+		mensajesError+="<p>El email ingresado no es valido</p>";
+	}*/
+	
+	
 	if(!patron.test(document.getElementById("telefono").value)){
             error++;
             mensajesError+="<p>El telefono no tiene el formato correcto</p>";
