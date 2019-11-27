@@ -602,6 +602,7 @@ margin-top: 2em;
 	right: 0em;
 	background-color: black;
 	color: white;
+	word-wrap: break-word;
 	border-radius: 0em 1em 0em 1em;
 }
 .montoDivDestinatario h2{
@@ -794,34 +795,37 @@ margin-top: 2em;
 /*----PARA UBICACION DEL IMPORTE*/
 .divUbicacionMontoAbajoDerecha{
 	position: absolute;
-	width: 7em;
-	height: 3em;
+	width: 25%;
+	height: auto;
 	bottom: 0em;
 	right: 0em;
 	background-color: black;
 	color: white;
+	word-wrap: break-word;
 	border-radius: 0em 1em 0em 1em;
 }
 
 .divUbicacionMontoArribaIzquierda{
 	position: absolute;
-	width: 7em;
-	height: 3em;
+	width: 25%;
+	height: auto;
 	top: 0em;
 	left: 0em;
 	background-color: black;
 	color: white;
+	word-wrap: break-word;
 	border-radius: 0em 1em 0em 1em;
 }
 
 .divUbicacionMontoArribaDerecha{
 	position: absolute;
-	width: 7em;
-	height: 3em;
+	width: 25%;
+	height: auto;
 	top: 0em;
 	right: 0em;
 	background-color: black;
 	color: white;
+	word-wrap: break-word;
 	border-radius: 0em 1em 0em 1em;
 }
 /*-----------------------------------*/
