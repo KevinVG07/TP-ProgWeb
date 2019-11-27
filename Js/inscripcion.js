@@ -43,18 +43,22 @@ $(document).ready(function(){
 //resumen de modal
 function capturar(){
 	
-	        	document.getElementsByClassName("datosPersona");
-
-         var arrayGuardar = []; 
+	     document.getElementsByClassName("datosPersona");
+         var arrayGuardar = [];
+         var listaInscriptos = "";
            
         for (var i = 0; i < document.getElementsByClassName("datosPersona").length; i++) {    
             arrayGuardar[i] = document.getElementsByClassName("datosPersona")[i].value;
    				} 
    			
    				arrayGuardar.slice();
-   				
-   				document.getElementById("resultado").innerHTML=arrayGuardar;
-   				
+   		for (var i = 0; i < document.getElementsByClassName("datosPersona").length; i++) {    
+            listaInscriptos+="    "+arrayGuardar[i];
+            if (i == 2 || i == 5 || i == 8 || i == 11 || i == 14) {
+            	listaInscriptos+="<br>";
+            }
+   			}  			
+   			document.getElementById("resultado").innerHTML=listaInscriptos;
         }
 
 
