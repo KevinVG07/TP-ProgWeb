@@ -1,4 +1,5 @@
 //clonar y eliminar el formulario
+
 $(document).ready(function(){
 
     $(".main_planilla_form .clonar").click(function(){
@@ -25,7 +26,7 @@ $(document).ready(function(){
 	});
 	
 });
-
+// restar al total
 $(document).ready(function(){
 		$("#restar").click(function(){
 		var precioActual=parseInt($("#total").text());
@@ -39,20 +40,62 @@ $(document).ready(function(){
 		});
 });
 
-//MODAL CON RESUMEN
+//resumen de modal
+function capturar(){
+	
+	        	document.getElementsByClassName("datosPersona");
 
-function mostrarVentana(){
-	document.getElementById("miVentana").style.display = "block";
+         var arrayGuardar = []; 
+           
+        for (var i = 0; i < document.getElementsByClassName("datosPersona").length; i++) {    
+            arrayGuardar[i] = document.getElementsByClassName("datosPersona")[i].value;
+   				} 
+   			
+   				arrayGuardar.slice();
+   				
+   				document.getElementById("resultado").innerHTML=arrayGuardar;
+   				
+        }
 
-}
+
+$(document).ready(function(){
+	$("#mostrarVentana").click(function(){
+		$("#miVentana").show();
+	});
+});
+
+
+
 function ocultarVentana(){
     document.getElementById("miVentana").style.display = "none";
 }
 
 
+
+
+
+
+
+
+
+
+
+
+/*$(document).ready(function(){
+	$("#cerrarVentana").click(function(){
+		$("#miVentana").hidden();
+
+	});
+});*/
+
+
+
+
+/*
 function capturar(){
 	var nombre=document.getElementById("nombre_1").value;
 	var apellido=document.getElementById("apellido_1").value;
 	var dni=document.getElementById("dni_1").value;
 	document.getElementById("resultado").innerHTML=nombre+" "+apellido+" "+dni;     
 }
+*/

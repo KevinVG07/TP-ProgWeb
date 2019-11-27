@@ -42,7 +42,6 @@
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="examples/background-events.html">Calendario</a></li>
                 <li><a href="giftcard.html">GiftCard</a></li>
-                <li><a href="inscripcion.html">Inscripcion</a></li>
                 <li><a href="contacto.html">Contactanos</a></li>
             </ul>
         </nav> 
@@ -57,25 +56,29 @@
 
                 <form class="a_clonar" action="#" method="post">
                     <label for="nombre_1">Nombre</label>
-                    <input type="text" id="nombre_1" required>
+                    <input  class="datosPersona" type="text" id="nombre_1" required>
                     <label for="apellido_1">Apellido</label>
-                    <input type="text" id="apellido_1" required>
+                    <input class="datosPersona" type="text" id="apellido_1" required>
                     <label for="dni_1">Documento</label>
-                    <input type="text" id="dni_1" required>
+                    <input class="datosPersona" type="text" id="dni_1" required>
                     
-                    <img id="sumar" class="clonar" src="img/agregar.ico"></button>
-                    <img id="restar" class="eliminar" src="img/eliminar.ico" ></button>
+                    <img id="sumar" class="clonar" src="img/agregar.ico">
+                    <img id="restar" class="eliminar" src="img/eliminar.ico" >
                 </form>
 
                 <div class="precio_final"><h4>Precio final:$<span id="total">4830</span></h4>
-                <button onclick="mostrarVentana()">INSCRIBIRSE</button></div>
+                <button id="mostrarVentana"  onclick="capturar()">INSCRIBIRSE</button>
+                </div>
 
             </article>
+                <!-- este div es el modal-->
             <div id="miVentana" >
                 <h2>RESUMEN DE INSCRIPCIÓN</h2>
-                <div id="resultado"></div>
-                <button onclick="ocultarVentana()">PAGAR</button>
+                <div  id="resultado" ></div>
+                <button onclick="ocultarVentana()" class="cerrar"><p>X</p></button>
+                <button class="pagar" onclick="ocultarVentana()">PAGAR</button>
             </div>
+
         </section>
    </main>
    <footer class="footer">
@@ -89,7 +92,6 @@
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="examples/background-events.html">Calendario</a></li>
                 <li><a href="giftcard.html">GiftCard!</a></li>
-                <li><a href="inscripcion.html">Inscripcion</a></li>
                 <li><a href="contacto.html">Contactanos</a></li>
             </ul>
         </div>
